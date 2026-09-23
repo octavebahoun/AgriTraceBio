@@ -1,0 +1,28 @@
+# Env / secrets
+.env
+**/.env
+**/secrets.h
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+dist/
+*.log
+
+# Uploads / données runtime
+backend/uploads/
+raspberry_orchestrator/models/*.pt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Divers
+*.pdf.bak

@@ -1,0 +1,16 @@
+[Unit]
+Description=AgriTraceBio edge orchestrator (Raspberry Pi)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/agritrace/raspberry_orchestrator
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/pi/agritrace/raspberry_orchestrator/.venv/bin/python main.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
